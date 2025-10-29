@@ -236,7 +236,7 @@
     text-decoration: underline;
   }
 
-  .social-icons a {
+  .social-icons p {
     display: inline-block;
     margin-bottom: 10px;
     color: #ccc;
@@ -244,11 +244,11 @@
     transition: color 0.3s ease;
   }
 
-  .social-icons a i {
+  .social-icons p i {
     margin-left: 50px;
   }
 
-  .social-icons a:hover {
+  .social-icons p:hover {
     color: #1ec0e9;
     text-decoration: underline;
   }
@@ -262,12 +262,12 @@
     margin-top: 30px;
   }
 
-  .footer-bottom-a {
+  .footer-bottom-p {
     color: #888;
     text-decoration: none;
   }
 
-  .footer-bottom-a:hover {
+  .footer-bottom-p:hover {
     color: #1ee2e9;
   }
 /* ===== Mobile Devices (up to 767px) ===== */
