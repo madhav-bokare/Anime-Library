@@ -62,7 +62,6 @@ const Home = () => {
 
         <div className="search-container">
           <input ref={searchInputRef} id="search" type="search" placeholder="Search..." />
-          <button type="button">Search</button>
         </div>
 
         {/* ======= MENU ICON ======= */}
