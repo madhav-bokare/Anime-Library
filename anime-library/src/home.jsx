@@ -29,21 +29,21 @@ const Home = () => {
   }, []);
 
   const mostPopular = [
-    { id: "one-piece", img: "/images/series img/one pice.webp", link: "/one-piece", alt: "One Piece" },
+    { id: "one piece", img: "/images/series img/one pice.webp", link: "/one-piece", alt: "One Piece" },
     { id: "naruto", img: "/images/series img/naruto.webp", link: "/naruto", alt: "Naruto" },
-    { id: "dragon-ball-z", img: "/images/series img/drazon ball z.webp", link: "/dragon-ball-z", alt: "Dragon Ball Z" },
+    { id: "dragon ball-z", img: "/images/series img/drazon ball z.webp", link: "/dragon-ball-z", alt: "Dragon Ball Z" },
   ];
 
   const mostLike = [
-    { id: "black-butler", img: "/images/series img/black butler.avif", link: "/black-butler", alt: "Black Butler" },
+    { id: "black butler", img: "/images/series img/black butler.avif", link: "/black-butler", alt: "Black Butler" },
     { id: "bleach", img: "/images/series img/bleach.webp", link: "/bleach", alt: "Bleach" },
-    { id: "chainsaw-man", img: "/images/series img/chainsow man.jpg", link: "/chainsaw-man", alt: "Chainsaw Man" },
+    { id: "chainsaw man", img: "/images/series img/chainsow man.jpg", link: "/chainsaw-man", alt: "Chainsaw Man" },
   ];
 
   const popularMovies = [
     { id: "your-name", img: "/images/movies images/your name.jpg", link: "/your-name", alt: "Your Name" },
-    { id: "a-silent-voice", img: "/images/movies images/a silent voice.webp", link: "/a-silent-voice", alt: "A Silent Voice" },
-    { id: "demon-slayer-mugen-train", img: "/images/movies images/Demon Slayer-Mugen Train.jpg", link: "/demon-slayer-mugen-train", alt: "Demon Slayer Mugen Train" },
+    { id: "a silent voice", img: "/images/movies images/a silent voice.webp", link: "/a-silent-voice", alt: "A Silent Voice" },
+    { id: "demon slayer mugen train", img: "/images/movies images/Demon Slayer-Mugen Train.jpg", link: "/demon-slayer-mugen-train", alt: "Demon Slayer Mugen Train" },
   ];
 
   return (
