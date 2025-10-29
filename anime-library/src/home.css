@@ -3,11 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
-
- .hidden {
+  
+  .hidden {
   display: none !important;
-  }
-
+}
   body {
     background-color: #000;
     color: #fff;
@@ -60,27 +59,15 @@
     border-radius: 8px;
     border: none;
     outline: none;
-    width: 200px;
-    background: #565353;
-    color: rgb(255, 230, 230);
+    width: 120%;
+    background: #797878;
+    color:#0fffff;
     transition: width 0.3s ease;
   }
-
-  .search-container button {
-    padding: 8px 12px;
-    background-color: #0fffff;
-    border: none;
-    border-radius: 8px;
-    color: #555454;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-
-  .search-container button:hover {
-    background-color: #00cccc;
-  }
-
+  #search::placeholder {
+  color: #0fffff;
+  font-size: 15px;
+}
   .menu-icon {
     font-size: 30px;
     color: #0fffff;
