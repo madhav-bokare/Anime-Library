@@ -1,0 +1,431 @@
+  /* ========== GLOBAL ========== */
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+  }
+
+  /* ========== NAVBAR ========== */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #141414;
+    padding: 22px 50px;
+    box-shadow: 0 20px 15px -5px rgba(85, 86, 86, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0ff;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px; 
+  }
+
+  .nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #0ff;
+    text-decoration: underline
+  }
+
+  /* Search bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-container input {
+    width: 220px;
+    padding: 4%;
+    border: 1px solid rgb(107, 111, 111);
+    border: none;
+    border-bottom: 1px solid rgb(154, 154, 154);
+    background: #111;
+    color: #0ff;
+  }
+
+  .search-container input::placeholder {
+    color: #05f4f490;
+    padding-left: 10%;
+    font-size: 15px;
+    
+    align-items: center;
+  }
+
+  /* ===== MINI MENU BOX ===== */
+  .mini-menu-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #111;
+    border:none;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0fffff55;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .mini-menu-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #0fffff88;
+  }
+
+  .mini-menu-box a {
+    color: #0fffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 8px;
+    background: #222;
+    transition: 0.3s;
+  }
+
+  .mini-menu-box a:hover {
+    background: #0fffff;
+    color: #000;
+  }
+
+  /* ===== INNER POPUP BOX ===== */
+  .more-box {
+    position: relative;
+  }
+
+  .more-btn {
+    background: #222;
+    display: flex;
+    color: #0fffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0 10px 10px ;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 125%;
+  }
+
+  .more-btn:hover {
+    background: #0fffff;
+    color: #000;
+  }
+
+  .inner-box {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    bottom: 45px;
+    right: 0;
+    background: #111;
+    border: 2px solid #0fffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px #0fffff66;
+  }
+
+  .more-box:hover .inner-box {
+    display: flex;
+  }
+
+  .inner-box a {
+    background: #222;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .inner-box a:hover {
+    background: #0fffff;
+    color: #000;
+  }
+
+  /* ========== SECTION ========== */
+  section {
+    margin-top: 7%;
+    padding-left: 7%;
+  }
+
+
+  h2 {
+    font-size:25px;
+    font-weight: bold;
+    color: #9b9898;
+    margin-bottom: 15px;
+    border-left: 4px solid #0ff;
+    padding-left: 10px;
+  }
+
+  /* ========== CARD CONTAINER (Horizontal Scroll) ========== */
+  .card-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 8%;
+    padding: 20px 10px;
+    scroll-behavior: smooth;
+  }
+  .card-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: #0fffff;
+    border-radius: 10px;
+  }
+
+  /* ========== CARD ========== */
+  .card {
+    flex: 0 0 auto;
+    text-align: center;
+    overflow: hidden;
+    background: transparent;  
+    border: none;
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: transparent;
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.05);
+  }
+
+  /* ========== ANIME NAME BELOW IMAGE ========== */
+  .anime-name {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #bebebe;
+    font-size: 1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .card:hover .anime-name {
+    color: #ffd70f;
+    text-shadow: 0 0 10px #ffd70f;
+  }
+/* ===== AUTO SLIDE SECTION ) ===== */
+.auto-slide-section {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.auto-slide-section .cardHeading {
+  display: flex;
+  justify-content:flex-start ;
+}
+
+.auto-slide-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.auto-slide-track {
+  display: flex;
+  gap: 20px;
+  animation: moveSlide 25s linear infinite;
+  width: max-content;
+  justify-content: flex-start;
+}
+
+/* Smooth continuous motion */
+@keyframes moveSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Reuse your card design */
+.auto-slide-section .card {
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.auto-slide-section .card:hover {
+  transform: scale(1.08);
+}
+
+/* Pause when hover */
+/* .auto-slide-section:hover .auto-slide-track {
+  animation-play-state: paused;
+} */
+
+/* Hide scroll bar */
+.auto-slide-track::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+  /* ========== SEARCH RESULTS ========== */
+  .search-results {
+    padding: 40px 60px;
+  }
+
+  .search-results h2 {
+    color: #0ff;
+  }
+
+  /* ========== FOOTER ========== */
+  .footer {
+    margin-top: 10%;
+    background: #111;
+    padding: 40px 20px;
+    border-top: 2px solid rgb(32, 32, 32);
+    color: #ddd;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .footer-section {
+    max-width: 300px;
+  }
+
+  .footer-section h2 {
+    color: #0ff;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-section-about-p {
+    font-size: 0.9rem;
+    color: #bbb;
+    line-height: 1.5;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin: 8px 0;
+  }
+
+  .footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-section ul li a:hover {
+    color: #0ff;
+    text-decoration: underline;
+  }
+
+  .social-icons p {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .social-icons p:hover {
+    color: #0ff;
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid #0ff3;
+    padding-top: 15px;
+    color: #888;
+  }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      gap: 10px;
+      flex-wrap: nowrap; 
+    }
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .search-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search-container input {
+      width: 100%;
+      max-width: 160px;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .footer-section {
+      max-width: 90%;
+    }
+    .mobile-only {
+      display: block;
+    }
+
+    .more-btn{
+      width: 100%;
+    }
+  }
