@@ -71,7 +71,8 @@ const Home = () => {
   useEffect(() => {
     const fetchAnime = async () => {
       try {
-        const res = await axios.get("axios.get("https://anime-library-backend-1196.onrender.com/api/anime")");
+   const res = await axios.get("https://anime-library-backend-1196.onrender.com/api/anime");
+
         setFetchedAnime(res.data);
       } catch (err) {
         console.error(" Error fetching anime:", err);
