@@ -342,7 +342,7 @@
   }
 
   .footer-section ul li {
-    margin: 8px 0;
+    margin: 20px 10px;
   }
 
   .footer-section ul li a {
@@ -350,19 +350,21 @@
     text-decoration: none;
     transition: color 0.3s;
   }
-
+ 
   .footer-section ul li a:hover {
     color: #0ff;
     text-decoration: underline;
   }
+  
+.social-icons p {
+  color: #bbb;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin: 0 0; 
+  margin-left: 10px;
+}
 
-  .social-icons p {
-    color: #bbb;
-    font-size: 0.9rem;
-    margin: 8px 0;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
 
   .social-icons p:hover {
     color: #0ff;
