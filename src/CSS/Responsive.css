@@ -1,0 +1,52 @@
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      gap: 10px;
+      flex-wrap: nowrap; 
+    }
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .search-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search-container input {
+      width: 100%;
+      max-width: 160px;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .footer-section {
+      max-width: 90%;
+    }
+    .mobile-only {
+      display: block;
+    }
+
+    .more-btn{
+      width: 100%;
+    }
+  }
