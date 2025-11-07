@@ -1,4 +1,41 @@
-  /*Active link (highlighted current page link) */
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #141414;
+  padding: 22px 50px;
+  box-shadow: 0 20px 15px -5px rgba(85, 86, 86, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0ff;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd70f;
+  text-shadow: 0 0 8px #ffd70f;
+}
+
 .active-link {
   color: #ffd70f;
   font-weight: 600;
@@ -8,157 +45,105 @@
   transition: all 0.3s ease;
 }
 
-/*Hover effect (सभी लिंक पर hover पर light blue glow) */
-.nav-links a:hover,
-.mini-menu-box a:hover {
-  color: #ffd70f;
-   text-shadow: 0 0 8px #ffd70f;
+/* ===== SEARCH BAR ===== */
+.search-container {
+  display: flex;
+  align-items: center;
 }
 
+.search-container input {
+  width: 220px;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #999;
+  background: #111;
+  color: #0ff;
+}
 
-  /* ========== NAVBAR ========== */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #141414;
-    padding: 22px 50px;
-    box-shadow: 0 20px 15px -5px rgba(85, 86, 86, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    flex-wrap: nowrap;
-  }
+.search-container input::placeholder {
+  color: #05f4f490;
+  padding-left: 5px;
+}
 
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #0ff;
-    letter-spacing: 1px;
-    white-space: nowrap;
-  }
+/* ===== MINI MENU (MOBILE) ===== */
+.mini-menu-box {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #111;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #0fffff55;
+  padding: 12px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
 
-  .nav-links {
-    display: flex;
-    gap: 30px; 
-  }
+.mini-menu-box a {
+  color: rgb(248, 250, 182);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
 
-  .nav-links a {
-    color: #f5f5f5;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-  }
+.mini-menu-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #0fffff88;
+}
 
-  /* Search bar */
-  .search-container {
-    display: flex;
-    align-items: center;
-  }
+.mini-menu-box a:hover {
+  background: #0fffff;
+  color: #000;
+}
 
-  .search-container input {
-    width: 220px;
-    padding: 4%;
-    border: 1px solid rgb(107, 111, 111);
-    border: none;
-    border-bottom: 1px solid rgb(154, 154, 154);
-    background: #111;
-    color: #0ff;
-  }
+/* ===== MORE BUTTON ===== */
+.more-box {
+  position: relative;
+}
 
-  .search-container input::placeholder {
-    color: #05f4f490;
-    padding-left: 10%;
-    font-size: 15px;
-    
-    align-items: center;
-  }
+.more-btn {
+  background: #111;
+  color: rgb(248, 250, 182);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-  /* ===== MINI MENU BOX ===== */
-  .mini-menu-box {
-    position: fixed;
-    bottom: 0;
-    right:1;
-    background: #111;
-    border:none;
-    border-radius: 15px;
-    box-shadow: 0 0 15px #0fffff55;
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 10;
-    transition: all 0.3s ease;
-  }
-  .mobile-only {
-    display: none;
-  }
-  .mini-menu-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #0fffff88;
-  }
+.inner-box {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  background: #111;
+  border: 2px solid #0fffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px #0fffff66;
+}
 
-  .mini-menu-box a {
-    color: rgb(248, 250, 182);
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    padding: 6px 0;
-    border-radius: 8px;
-    /* background: #222; */
-    transition: 0.3s;
-  }
+.more-box:hover .inner-box {
+  display: flex;
+}
 
-  .mini-menu-box a:hover {
-    background: #0fffff;
-    color: #000;
-  }
+.inner-box a {
+  background: #222;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
 
-  /* ===== INNER POPUP BOX ===== */
-  .more-box {
-    position: relative;
-  }
+.inner-box a:hover {
+  background: #0fffff;
+  color: #000;
+}
 
-  .more-btn {
-    background: #111;
-    margin-right: 0px;
-    display: flex;
-    color: rgb(248, 250, 182);
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    /* width: 125%; */
-  }
-
-  .inner-box {
-    display: none;
-    flex-direction: column;
-    gap: 8px;
-    position: absolute;
-    bottom: 35px;
-    right: 0;
-    background: #111;
-    border: 2px solid #0fffff;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 15px #0fffff66;
-  }
-
-  .more-box:hover .inner-box {
-    display: flex;
-  }
-
-  .inner-box a {
-    background: #222;
-    padding: 5px 10px;
-    border-radius: 8px;
-  }
-
-  .inner-box a:hover {
-    background: #0fffff;
-    color: #000;
-  }
