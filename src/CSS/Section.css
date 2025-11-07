@@ -84,7 +84,6 @@
 .auto-slide-section {
   width: 50%;
   max-width: 1200px;
-  /* margin: 40px auto; */
 }
 
 .auto-slide-section .cardHeading {
@@ -132,7 +131,7 @@
   margin-top: 5px;
 }
 
-/* 🔁 Smooth continuous motion */
+/* Smooth continuous motion */
 @keyframes moveSlide {
   0% {
     transform: translateX(0);
@@ -151,7 +150,7 @@
 @media (max-width: 768px) {
   .auto-slide-track {
     gap: 10px;
-    animation-duration: 35s; /* थोड़ा धीमा animation */
+    animation-duration: 35s;
   }
 
   .card {
@@ -178,7 +177,7 @@
   }
 
   .card img {
-    height: 160px;
+    height: 200px;
   }
 
   .anime-name {

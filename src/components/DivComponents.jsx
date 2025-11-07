@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "../CSS/DivComponents.css";
+import Navbar from "./Navbar.jsx"
 
 const DivComponents = () => {
   const { animeName } = useParams();
@@ -19,7 +20,7 @@ const DivComponents = () => {
       } catch (err) {
         console.error(err);
         setError("Anime not found");
-      }
+      }``
     };
 
     fetchAnime();
@@ -41,6 +42,9 @@ const DivComponents = () => {
   if (!anime) return <p className="loading">Loading...</p>;
 
   return (
+     <>
+        <Navbar/>
+
     <div className="anime-details">
       <div className="anime-header">
         <img src={anime.img} alt={anime.name} className="anime-image" />
@@ -78,6 +82,7 @@ const DivComponents = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 

@@ -10,7 +10,7 @@
 .anime-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 30px;
   margin-bottom: 40px;
   flex-wrap: wrap;
@@ -133,17 +133,19 @@
     height: 350px;
   }
 }
-
 /* Mobile devices */
 @media (max-width: 600px) {
   .anime-header {
-    flex-direction: column;
+    margin: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     gap: 20px;
   }
 
   .anime-image {
-    width: 200px;
-    height: 280px;
+    width: 150px;
+    height: 210px;
   }
 
   .anime-info h1 {
@@ -166,6 +168,9 @@
     height: 250px;
   }
 
+  .back-btn-container{
+    display: flex;
+  justify-content: flex-end;  }
   .back-home {
     font-size: 1rem;
     padding: 10px 20px;
