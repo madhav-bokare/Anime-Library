@@ -69,7 +69,8 @@
 .mini-menu-box {
   position: fixed;
   bottom: 15px;
-  /* right: 15px; */
+  left: 50%;
+  transform: translateX(-50%);
   background: #111;
   border-radius: 15px;
   box-shadow: 0 0 15px #0fffff55;
@@ -77,7 +78,7 @@
   display: none;
   flex-direction: column;
   gap: 10px;
-  z-index: 100;
+  z-index: 9999; /* ⬅️ Make sure it's always on top */
   transition: all 0.3s ease;
 }
 
