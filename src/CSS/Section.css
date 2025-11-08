@@ -91,30 +91,28 @@ h2 {
 .auto-slide-section {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; /* 👈 Center Recommended sections */
-  text-align: center;
+  margin: 0 auto; 
+   text-align: left;
 }
 
 .auto-slide-section .cardHeading {
+  
   font-size: 25px;
   color: #9b9898;
   margin-bottom: 40px;
-  border-left: none;
-  display: inline-block;
-  border-bottom: 3px solid #0ff;
   padding: 0 15px 8px 15px;
 }
 
 .auto-slide-container {
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   position: relative;
   border-radius: 10px;
 }
 
 .auto-slide-track {
   display: flex;
-  gap: 80px;
+  gap: 25px;
   animation: moveSlide 25s linear infinite;
   width: max-content;
 }
@@ -127,8 +125,8 @@ h2 {
 }
 
 .auto-slide-section .card img {
-  width: 100%;
-  height: 300px;
+  width: 90%;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
