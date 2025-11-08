@@ -69,16 +69,15 @@
 .mini-menu-box {
   position: fixed;
   bottom: 15px;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   background: #111;
   border-radius: 15px;
   box-shadow: 0 0 15px #0fffff55;
   padding: 12px;
-  display: none;
   flex-direction: column;
   gap: 10px;
-  z-index: 9999; /* ⬅️ Make sure it's always on top */
+  z-index: 9999; 
   transition: all 0.3s ease;
 }
 
@@ -110,7 +109,7 @@
 .more-btn {
   background: #111;
   color: rgb(248, 250, 182);
-  border: none;
+  /* border: none; */
   font-size: 16px;
   font-weight: 700;
   padding: 10px;
@@ -120,7 +119,7 @@
 }
 
 .inner-box {
-  display: none;
+  /* display: none; */
   flex-direction: column;
   gap: 8px;
   position: absolute;
