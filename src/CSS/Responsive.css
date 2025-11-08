@@ -24,9 +24,9 @@
     gap: 20px;
     overflow-x: hidden; 
   }
-  h2{
+  /* h2{
     border-left: 4px solid #0ff;
-  }
+  } */
 
   .card {
     min-width: 150px;
@@ -39,7 +39,7 @@
 
   .cardHeading {
     font-size: 1.5rem;
-    border-left: none;
+    gap: 20px;
     padding-left: 0;
     text-align: center;
   }
@@ -62,13 +62,15 @@
   }
 
   .card-container {
+    width: 80%;
+    text-align: left;
     justify-content: center;
     gap: 20px;
-    overflow-x: hidden; /* optional, to avoid scrollbars */
+    overflow-x: auto; 
   }
-  h2{
+  /* h2{
     border-left: 4px solid #0ff;
-  }
+  } */
 
   .card {
     min-width: 150px;
@@ -76,24 +78,17 @@
   }
 
   .card img {
-    height: 220px;
+    height: 250px;
   }
 
   .cardHeading {
     font-size: 1.5rem;
-    border-left: none;
+    border-left:none;
     padding-left: 0;
-    text-align: center;
+    text-align: left;
   }
 }
-/* @media (min-width: 853px) and ( max-width: 1280px) {
- 
-  .nav-links{
-    display: none;
-  }
 
-  
-} */
 @media (max-width: 1023px) {
   .nav-links,
   .more-box {
