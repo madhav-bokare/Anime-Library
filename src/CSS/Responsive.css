@@ -1,10 +1,11 @@
-  @media (max-width: 490px){
+  @media (max-width: 430px){
       .logo{
         font-size: 20px;
       }
       .search-container{
         margin-left: 7%;
-      }
+}
+
     }
 @media (max-width: 820px) {
   section {
@@ -24,9 +25,6 @@
     gap: 20px;
     overflow-x: hidden; 
   }
-  /* h2{
-    border-left: 4px solid #0ff;
-  } */
 
   .card {
     min-width: 150px;
@@ -68,9 +66,6 @@
     gap: 20px;
     overflow-x: auto; 
   }
-  /* h2{
-    border-left: 4px solid #0ff;
-  } */
 
   .card {
     min-width: 150px;
@@ -127,10 +122,6 @@
   .anime-info h1 {
     font-size: 2.2rem;
   }
-
-  .anime-video {
-    height: 350px;
-  }
 }
 /* Mobile devices */
 @media (max-width: 600px) {
@@ -155,23 +146,129 @@
     font-size: 1rem;
   }
 
-  .anime-videos h2 {
-    font-size: 1.5rem;
-  }
-
-  .video-card {
-    padding: 10px;
-  }
-
-  .anime-video {
-    height: 250px;
-  }
-
   .back-btn-container{
     display: flex;
   justify-content: flex-end;  }
   .back-home {
     font-size: 1rem;
     padding: 10px 20px;
+  }
+}
+@media (max-width: 992px) {
+  .anime-details {
+    padding: 25px;
+  }
+
+  .anime-info h1 {
+    font-size: 2.2rem;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+}
+
+/* Mobile Devices (max 600px) */
+@media (max-width: 600px) {
+  .anime-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .anime-image {
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .anime-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .anime-info p {
+    font-size: 1rem;
+  }
+
+  .anime-videos h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .video-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .video-card h3 {
+    font-size: 1rem;
+  }
+
+  .anime-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+  }
+
+  .back-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .back-home {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Very Small Devices (max 430px) */
+@media (max-width: 430px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .search-container {
+    margin-left: 7%;
+  }
+
+  .anime-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
+  .video-card h3 {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1023px) {
+  .menu-icon-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links,
+  .more-box {
+    display: none !important;
+  }
+}
+
+/* ===== DESKTOP HIDE ===== */
+@media (min-width: 1024px) {
+  .menu-icon-bottom,
+  .mini-menu-box-bottom {
+    display: none !important;
   }
 }
