@@ -1,3 +1,4 @@
+/* === MAIN CONTAINER === */
 .anime-details {
   background: linear-gradient(135deg, #0a0a0a, #1e1e1e);
   color: #fff;
@@ -6,24 +7,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* === Header === */
+/* === HEADER === */
 .anime-header {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 20px;
+  margin-left: 10px;
   margin-bottom: 40px;
   flex-wrap: wrap;
-  text-align: center;
 }
 
 .anime-image {
-  width: 250px;
-  height: 350px;
+  margin-right: 10px;
+  width: 150px;
+  height: 230px;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(255, 0, 100, 0.3);
-  transition: transform 0.3s ease;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .anime-image:hover {
@@ -31,40 +32,42 @@
 }
 
 .anime-info h1 {
-  font-size: 2.8rem;
-  color: #ff4081;
+  font-size: 35px;
+  color: #8bcdf6;
   margin-bottom: 10px;
 }
 
 .anime-info p {
   font-size: 1.2rem;
-  color: #bbb;
+  color: #bbeaf8;
 }
 
-/* === Video Section === */
+/* === VIDEO SECTION === */
 .anime-videos {
   text-align: center;
 }
 
 .anime-videos h2 {
+  text-align: left;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ff4081;
-  text-shadow: 0 0 10px #ff4081;
+  color: #f3bca3;
 }
 
-/* === Video Grid === */
+/* === VIDEO GRID === */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 25px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .video-card {
   background: #151515;
   border-radius: 15px;
   padding: 15px;
+  width: 80%;
+  margin: 0 auto;
   box-shadow: 0 0 15px rgba(255, 64, 129, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -82,24 +85,26 @@
 
 .anime-video {
   width: 100%;
-  height: 420px;
+  height: auto;
+  aspect-ratio: 16 / 9;
   border-radius: 10px;
   border: none;
+  background: #000;
 }
 
-/* === Back Button === */
+/* === BACK BUTTON === */
 .back-btn-container {
-  text-align: center;
+  text-align: right;
   margin-top: 50px;
 }
 
 .back-home {
   background: linear-gradient(90deg, #ff4081, #0ff);
   color: white;
-  padding: 12px 30px;
+  padding: 12px 20px;
   border-radius: 30px;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 450;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -109,6 +114,7 @@
   transform: scale(1.08);
 }
 
+/* === ERROR / LOADING === */
 .error,
 .loading {
   text-align: center;
@@ -116,5 +122,3 @@
   font-size: 1.4rem;
   margin-top: 50px;
 }
-
-
