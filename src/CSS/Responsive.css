@@ -17,7 +17,7 @@
   }
 
   .auto-slide-section {
-    width: 90%;
+    width: 100%;
   }
 
   .card-container {
@@ -56,7 +56,7 @@
   }
 
   .auto-slide-section {
-    width: 90%;
+    width: 100%;
   }
 
   .card-container {
@@ -175,7 +175,31 @@
 
 /* Mobile Devices (max 600px) */
 @media (max-width: 600px) {
-  .anime-header {
+  @media (max-width: 600px) {
+  /* Fix hidden first/last cards */
+  .card-container,
+  .auto-slide-track {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Optional: tighten spacing for small screens */
+  .card-container {
+    gap: 12px;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    scroll-snap-align: start;
+  }
+
+  /* Ensure the section doesn’t add extra horizontal scroll */
+  section {
+    overflow-x: hidden;
+  }
+}
+.anime-header {
     flex-direction: row;
   }
 
