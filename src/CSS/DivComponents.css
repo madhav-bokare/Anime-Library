@@ -63,18 +63,8 @@
 }
 
 .video-card {
-  background: #151515;
   border-radius: 15px;
-  padding: 15px;
-  width: 90%;
-  margin: 0 auto;
-  box-shadow: 0 0 15px rgba(255, 64, 129, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.video-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(255, 64, 129, 0.4);
+  width: 60%;
 }
 
 .video-card h3 {
@@ -90,6 +80,11 @@
   border-radius: 10px;
   border: none;
   background: #000;
+}
+
+.anime-video:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 64, 129, 0.4);
 }
 
 /* === BACK BUTTON === */
