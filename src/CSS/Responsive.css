@@ -40,7 +40,8 @@
   .mini-menu-box {
     display: flex !important; 
    }
-     .menu-icon-bottom {
+
+      .menu-icon-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,11 +53,4 @@
     padding: 12px 20px;
     gap: 15px;
   }
-  .search-container{
-       margin-right: auto;
-        width: 80px;
-      }
-      .menu-icon-bottom{
-        bottom: 10%;
-      }
 }
