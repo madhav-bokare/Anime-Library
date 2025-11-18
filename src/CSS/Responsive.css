@@ -5,8 +5,8 @@
         font-size: 20px;
       }
     .search-container{
-       margin-right: auto;
-        width: 80px;
+       margin-right: auto!important;
+        width: 80px!important;
 }
  .nav-links,
   .more-box {
@@ -50,7 +50,7 @@
 }
 @media (min-width: 430px){
    .navbar {
-    padding: 12px 20px;
-    gap: 15px;
+    padding: 12px 20px!important;
+    gap: 15px!important;
   }
 }
