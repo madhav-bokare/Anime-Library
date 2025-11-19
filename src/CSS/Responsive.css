@@ -38,9 +38,6 @@
     width: 150px;
     height: auto;
   }
- .card img[data-name="Jujutsu Kaisen 0"] {
-    height: 20px !important;
-  }
   .auto-slide-section{
    display: none;
 }
