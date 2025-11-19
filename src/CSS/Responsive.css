@@ -5,8 +5,8 @@
         font-size: 20px;
       }
     .search-container{
-       margin-right: auto!important;
-        width: 80px!important;
+       margin: auto;
+        width: 60px!important;
 }
  .nav-links,
   .more-box {
@@ -27,7 +27,23 @@
     align-items: center;
     justify-content: center;
   }
-
+  .cardHeading{
+    font-size: 20px!important;
+  }
+  .card img{
+    width: 150px;
+    height: auto;
+  }
+  .card{
+    width: 150px;
+    height: auto;
+  }
+ .card img[data-name="Jujutsu Kaisen 0"] {
+    height: 20px !important;
+  }
+  .auto-slide-section{
+   display: none;
+}
 }
 
 /* Tablets */
