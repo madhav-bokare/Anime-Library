@@ -9,7 +9,7 @@ const MostPopular = () => {
   useEffect(() => {
     const fetchMostPopular = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/anime/mostpopular");
+        const res = await fetch("https://anime-library-backend-1196.onrender.com/api/anime/mostpopular");
         const data = await res.json();
         setMostPopular(data);
       } catch (err) {
