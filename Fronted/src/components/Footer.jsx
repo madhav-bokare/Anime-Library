@@ -18,7 +18,7 @@ const Footer = () => {
           <h2 className="footer-section-about-h2">Quick Links</h2>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/categories">Popular Series</Link></li>
+            <li><Link to="/popular-series">Popular Series</Link></li>
             <li><Link to="/popular-movies">Popular Movies</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
           </ul>
