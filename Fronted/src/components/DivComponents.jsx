@@ -13,7 +13,7 @@ const DivComponents = () => {
     const fetchAnime = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/anime/name/${encodeURIComponent(animeName)}`
+          `https://anime-library-backend-1196.onrender.com/api/anime/name/${encodeURIComponent(animeName)}`
         );
         setAnime(res.data);
         setError("");
