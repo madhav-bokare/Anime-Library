@@ -12,11 +12,6 @@
   .more-box {
     display: none !important;
   }
-
-  .mini-menu-box {
-    display: flex !important; 
-  }
-
     .navbar {
     padding: 12px 20px;
     gap: 15px;
@@ -31,7 +26,7 @@
     font-size: 20px!important;
   }
    .card img{
-    width: 150px;
+    width: 120px;
     height: auto;
   }
   .card{
@@ -50,7 +45,13 @@ width: 150px!important;
 height: 150px!important;
 }
 .back-btn-container{
-  display: none;
+  width: 200px;
+  display: flex;
+  margin: auto;
+}
+.back-home{
+  font-size: 12px!important;
+  margin: auto;
 }
 .anime-details{
   display: block;
@@ -86,16 +87,6 @@ height: 150px!important;
  .nav-links,
   .more-box {
     display: none !important;
-  }
-
-  .mini-menu-box {
-    display: flex !important; 
-   }
-
-      .menu-icon-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .anime-details{
   display: block;

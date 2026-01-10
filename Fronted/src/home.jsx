@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Section from "./components/Section.jsx";
 import defaultAnimeData from "./data/defaultAnimeData.jsx";
-import MiniBox from "./MiniMenuBox/miniBox.jsx";
 
 import "./CSS/Responsive.css";
 
@@ -35,7 +34,6 @@ const Home = () => {
         fetchedAnime={fetchedAnime}
         defaultAnimeData={defaultAnimeData}
       />
-      <MiniBox />
       <Footer />
     </>
   );

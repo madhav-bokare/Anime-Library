@@ -20,8 +20,8 @@ const Navbar = ({ setQuery = () => {} }) => {
           </Link>
 
           <Link
-            to="/categories"
-            className={location.pathname === "/categories" ? "active-link" : ""}
+            to="/popular-series"
+            className={location.pathname === "/popular-series" ? "active-link" : ""}
           >
             Popular Series
           </Link>

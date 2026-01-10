@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "../CSS/DivComponents.css";
 import Navbar from "./Navbar.jsx"
-import MiniBox from "../MiniMenuBox/miniBox.jsx";
 
 const DivComponents = () => {
   const { animeName } = useParams();
@@ -83,7 +82,6 @@ const DivComponents = () => {
         </Link>
       </div>
     </div>
-    <MiniBox />
     </>
   );
 };
