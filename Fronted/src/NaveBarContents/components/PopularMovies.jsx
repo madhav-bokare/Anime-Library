@@ -9,7 +9,7 @@ const PopularMovies = () => {
   useEffect(() => {
     const fetchPopularMovies = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/anime/popularmovies");
+        const res = await fetch("https://anime-library-backend-1196.onrender.com/api/anime/popularmovies");
         const data = await res.json();
         setPopularMovies(data);
       } catch (err) {
